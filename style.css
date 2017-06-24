@@ -30,7 +30,7 @@ body {
 }
 #hero {
   min-height: 50vh;
-  background-image: url('static.gif');
+  background-image: url('img/static.gif');
   background-position: center;
   color: white;
   box-sizing: border-box;
