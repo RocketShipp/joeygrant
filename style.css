@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+.pusher {
+  background: black !important;
+}
+#navBar > div {
+  font-size: 2em;
+  padding: 0;
+}
+.ui.header {
+  color: inherit !important;
+}
+.ui.menu {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.ui.inverted.menu {
+  padding-top: 1%;
+}
+.ui.item::before, .ui.item::after {
+  display: none;
+}
+.socialMediaButton {
+  margin-right: .5em;
+}
+#hero {
+  min-height: 50vh;
+  background-image: url('static.gif');
+  background-position: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 1em;
+}
+#hero i.icon {
+  font-size: 4em;
+}
+.ui.embed {
+  margin: 10px 0;
+}
+.ui.labeled.input {
+  margin: 1em 0;
+}
+#contact {
+  margin: 1em 0;
+  padding: 1em 0;
+  background-color: #303030;
+  border-radius: 1em;
+}
