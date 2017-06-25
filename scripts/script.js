@@ -6,7 +6,7 @@ $(document).ready(function(){
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
   // Loading Icon settings
-  $('#embeds').hide();
+  $('#embeds').css('display', 'none');
 
   // AJAX call to Vimeo appends each video
   var $vidAspect = null;
@@ -24,8 +24,8 @@ $(document).ready(function(){
           $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?autoplay=0&portrait=0" width="100%" height="${$('#projects').width() * $vidAspect}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
         }
       })
-      $('#loader').hide();
-      $('#embeds').show();
+      $('#loader').css('display', 'none');
+      $('#embeds').css('display', 'block');
     }
   })
 
