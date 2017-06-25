@@ -40,7 +40,7 @@ body {
   padding: 1em;
   font-size: 1em;
 }
-#hero i.icon {
+#hero i {
   font-size: 4em;
 }
 .ui.embed {
@@ -51,7 +51,7 @@ body {
 }
 #contact {
   margin: 1em 0;
-  padding: 1em;
+  padding: 1.5em 0;
   background-color: #303030;
 }
 #footer {

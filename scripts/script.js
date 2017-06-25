@@ -6,9 +6,7 @@ $(document).ready(function(){
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
   // Loading Icon settings
-  $('div.pusher').hide();
-  $('#loader').attr('height', $(window).height());
-
+  $('#embeds').hide();
 
   // AJAX call to Vimeo appends each video
   var $vidAspect = null;
@@ -23,21 +21,20 @@ $(document).ready(function(){
       resp.data.forEach(function(video){
         $vidAspect = (video.height / video.width);
         if (video.privacy.embed === 'public') {
-          $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?autoplay=0&portrait=0" width="100%" height="${$('.ui.container').width() * $vidAspect}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
+          $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?autoplay=0&portrait=0" width="100%" height="${$('#projects').width() * $vidAspect}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
         }
       })
       $('#loader').hide();
-      $('div.pusher').show();
+      $('#embeds').show();
     }
   })
 
   // Resizes iFrames on device rotation
   $(window).on("orientationchange",function(){
-    $('#loader').attr('height', $(window).height());
     $('.myFrame').attr('height', $('#embeds').width() * $vidAspect);
   });
 
-  // Current year for footer
+  // Footer copyright year
   var d = new Date();
   var n = d.getFullYear();
   $('.footerText').prepend('© ' + n);
