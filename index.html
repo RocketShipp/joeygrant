@@ -9,6 +9,12 @@
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Loader -->
+  <div clas="ui container fluid">
+    <video id="loader" width="100%" height="500" autoplay>
+      <source src="./loader.mp4" type="video/mp4" />
+    </video>
+  </div>
   <!-- Sidebar -->
   <div class="ui sidebar inverted vertical menu">
     <h1 class="ui header medium item">Connect</h1>
@@ -17,6 +23,7 @@
     <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="fa fa-twitter socialMediaButton" aria-hidden="true"></i> Twitter</a>
     <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="fa fa-linkedin socialMediaButton" aria-hidden="true"></i> LinkedIn</a>
   </div>
+  <!-- Pusher -->
   <div class="pusher">
     <!-- Navigation -->
     <div id="navContainer" class="ui container">
@@ -52,16 +59,20 @@
     </div>
     <!-- Projects -->
     <div id="projects" class="ui container">
-      <div class="ui grid middle aligned">
-        <div id="embeds" class="sixteen wide column">
+      <div class="ui grid middle aligned center aligned">
+        <div id="loader" class="row">
+          <div class="sixteen wide column">
+          </div>
+        </div>
+        <div id="embeds" class="row">
         </div>
       </div>
     </div>
     <!-- Contact -->
-    <div id="contact" class="ui container">
-      <div class="ui grid container center aligned">
+    <div id="contact" class="ui container fluid">
+      <div class="ui grid center container aligned">
         <div class="row">
-          <div class="column">
+          <div class="column center aligned">
             <p class="ui header huge">
               Contact
             </p>
@@ -89,8 +100,19 @@
               </div>
               <input type="textarea">
             </div>
-            <button class="ui button fluid">Send Message</button>
+            <button class="ui green button fluid">Send Message</button>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer" class="ui container">
+      <div class="ui divider"></div>
+      <div class="row">
+        <div class="sixteen wide column center aligned">
+          <small class="footerText">
+           Joseph Grant - Developed by <a href="austinshipp.com">RocketShipp</a>
+          </small>
         </div>
       </div>
     </div>

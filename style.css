@@ -4,7 +4,10 @@ body {
   background-color: black;
   color: white;
 }
-.pusher {
+#loader {
+  border: none;
+}
+.pusher, body.pushable {
   background: black !important;
 }
 #navBar > div {
@@ -48,7 +51,9 @@ body {
 }
 #contact {
   margin: 1em 0;
-  padding: 1em 0;
+  padding: 1em;
   background-color: #303030;
-  border-radius: 1em;
+}
+#footer {
+  text-align: center;
 }
