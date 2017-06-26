@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Grant</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
@@ -14,8 +15,8 @@
   <div class="ui sidebar inverted vertical menu">
     <h1 class="ui header medium item center aligned">Connect</h1>
     <a href="https://vimeo.com/user980609" target="_blank" class="item"><i class="icon vimeo sqaure socialMediaButton"></i> Vimeo</a>
-    <a href="https://www.instagram.com/beardwillstay/" target="_blank" class="item"><i class="icon instagram square socialMediaButton"></i> Instagram</a>
-    <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="icon twitter square socialMediaButton"></i> Twitter</a>
+    <a href="https://www.instagram.com/beardwillstay/" target="_blank" class="item"><i class="icon instagram socialMediaButton"></i> Instagram</a>
+    <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="icon twitter socialMediaButton"></i> Twitter</a>
     <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="icon linkedin socialMediaButton"></i> LinkedIn</a>
   </div>
   <!-- Pusher -->
@@ -26,7 +27,7 @@
           <div class="mobile only	tablet only sixteen wide column">
             <div class="ui menu">
               <h1 class="ui header huge item left">Joseph Grant</h1>
-              <div class="ui header large item right">
+              <div class="ui header medium item right">
                 <i class="icon content"></i>
               </div>
             </div>
@@ -35,10 +36,10 @@
             <div class="ui menu">
               <h1 class="ui header huge item left">Joseph Grant</h1>
               <div class="ui header large item right">
-                <button class="ui header large button inverted one wide column"><i class="icon vimeo square"></i></button>
-                <button class="ui header large button inverted one wide column"><i class="icon instagram square"></i></button>
-                <button class="ui header large button inverted one wide column"><i class="icon twitter square"></i></button>
-                <button class="ui header large button inverted one wide column"><i class="icon linkedin square"></i></button>
+                <a class="ui header large button inverted one wide column" href='https://vimeo.com/user980609' target="_blank"><i class="icon vimeo"></i></a>
+                <a class="ui header large button inverted one wide column" href='https://www.instagram.com/beardwillstay/' target="_blank"><i class="icon instagram"></i></a>
+                <a class="ui header large button inverted one wide column" href='https://twitter.com/ynotserious' target="_blank"><i class="icon twitter"></i></button>
+                <a class="ui header large button inverted one wide column" href='https://www.linkedin.com/in/joseph-grant-b67154bb/' target="_blank"><i class="icon linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -79,7 +80,7 @@
     <!-- Contact -->
     <div id="contact" class="ui container fluid">
       <div class="ui grid center container aligned">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="window.location='#contact'"></iframe>
         <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="hidden_iframe" method="POST" onsubmit="submitted=true">
           <div class="column center aligned">
             <p class="ui header huge">
@@ -119,13 +120,16 @@
       <div class="ui divider"></div>
       <div class="row">
         <div class="sixteen wide column center aligned">
-          <small class="footerText">
-           Joseph Grant - Developed by <a href="http://austinshipp.com">RocketShipp</a>
-          </small>
+          <button onclick="window.location='http://austinshipp.com'" class="footerText ui basic green inverted button">
+           Joseph Grant - Developed by RocketShipp
+         </button>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
   <script src="./scripts/script.js"></script>

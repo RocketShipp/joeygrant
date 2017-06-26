@@ -14,7 +14,12 @@ body {
   font-size: 2em;
   padding: 0;
 }
-.computer.only .button, .computer.only .button:hover, .computer.only .button:focus {
+.header {
+  font-family: 'Architects Daughter', cursive !important;
+  font-weight: bold !important;
+  text-shadow: .1em .1em .1em black;
+}
+#navBar .button, #navBar .button:hover, #navBar .button:focus {
   background-color: transparent !important;
   box-shadow: none !important;
   border: none !important;
@@ -67,6 +72,17 @@ body {
   color: #21BA45;
 }
 #footer {
+  font-size: 1em;
   color: white;
   text-align: center;
+}
+.footerText a, .footerText a:visited, .footerText a:focus {
+  color: #21BA45;
+  transition: .3s;
+}
+.footerText a:hover {
+  color: white;
+}
+#footer button {
+  box-shadow: none !important;
 }
