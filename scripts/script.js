@@ -28,12 +28,29 @@ $(document).ready(function(){
     }
   })
 
-  // Resizes iFrames on device rotation
+  // Responsive textarea height
+  $('#message').css('min-height', $('#subject').height() * 3);
+
+  // Device rotation settings
   $(window).on("orientationchange",function(){
+    // Resizes iFrames
     $('.myFrame').attr('height', function(){
       return $('#embeds').width() * $(this).data('aspect');
     });
+    // Resizes textarea
+    $('#message').css('min-height', $('#subject').height() * 3);
   });
+
+  // Form validator
+  $('.contactInput').on('input', function(){
+    if ($('#name').val() !== '' && $('#email').val() !== '' && $('#subject').val() !== '' && $('#message').val() !== '') {
+      if ($('#submit').hasClass('disabled')) {
+        $('#submit').removeClass('disabled');
+      }
+    } else {
+      $('#submit').addClass('disabled');
+    }
+  })
 
   // Footer copyright year
   var d = new Date();

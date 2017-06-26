@@ -12,22 +12,33 @@
 <body>
   <!-- Sidebar -->
   <div class="ui sidebar inverted vertical menu">
-    <h1 class="ui header medium item">Connect</h1>
-    <a href="https://vimeo.com/user980609" target="_blank" class="item"><i class="fa fa-vimeo socialMediaButton" aria-hidden="true"></i> Vimeo</a>
-    <a href="https://www.instagram.com/beardwillstay/" target="_blank" class="item"><i class="fa fa-instagram socialMediaButton" aria-hidden="true"></i> Instagram</a>
-    <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="fa fa-twitter socialMediaButton" aria-hidden="true"></i> Twitter</a>
-    <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="fa fa-linkedin socialMediaButton" aria-hidden="true"></i> LinkedIn</a>
+    <h1 class="ui header medium item center aligned">Connect</h1>
+    <a href="https://vimeo.com/user980609" target="_blank" class="item"><i class="icon vimeo sqaure socialMediaButton"></i> Vimeo</a>
+    <a href="https://www.instagram.com/beardwillstay/" target="_blank" class="item"><i class="icon instagram square socialMediaButton"></i> Instagram</a>
+    <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="icon twitter square socialMediaButton"></i> Twitter</a>
+    <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="icon linkedin socialMediaButton"></i> LinkedIn</a>
   </div>
   <!-- Pusher -->
   <div class="pusher">
     <!-- Navigation -->
     <div id="navContainer" class="ui container">
       <div id="navBar" class="ui grid">
-          <div class="sixteen wide column">
+          <div class="mobile only	tablet only sixteen wide column">
             <div class="ui menu">
               <h1 class="ui header huge item left">Joseph Grant</h1>
               <div class="ui header large item right">
                 <i class="icon content"></i>
+              </div>
+            </div>
+          </div>
+          <div class="computer only sixteen wide column">
+            <div class="ui menu">
+              <h1 class="ui header huge item left">Joseph Grant</h1>
+              <div class="ui header large item right">
+                <button class="ui header large button inverted one wide column"><i class="icon vimeo square"></i></button>
+                <button class="ui header large button inverted one wide column"><i class="icon instagram square"></i></button>
+                <button class="ui header large button inverted one wide column"><i class="icon twitter square"></i></button>
+                <button class="ui header large button inverted one wide column"><i class="icon linkedin square"></i></button>
               </div>
             </div>
           </div>
@@ -68,38 +79,38 @@
     <!-- Contact -->
     <div id="contact" class="ui container fluid">
       <div class="ui grid center container aligned">
-        <div class="row">
+        <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="_self" method="POST">
           <div class="column center aligned">
             <p class="ui header huge">
               Contact
             </p>
             <div class="ui labeled fluid input">
-              <div class="ui label">
+              <label for="name" class="ui label">
                 Name
-              </div>
-              <input type="text">
+              </label>
+              <input type="text" id="name" name="entry.661391189" class="contactInput">
             </div>
             <div class="ui labeled fluid input">
-              <div class="ui label">
+              <label for="email" class="ui label">
                 Email
-              </div>
-              <input type="email">
+              </label>
+              <input type="email" id="email" name="entry.1021572072" class="contactInput">
             </div>
             <div class="ui labeled fluid input">
-              <div class="ui label">
+              <label for="subject" class="ui label">
                 Subject
-              </div>
-              <input type="text">
+              </label>
+              <input type="text" id="subject" name="entry.598981944" class="contactInput">
             </div>
             <div class="ui labeled fluid input">
-              <div class="ui label">
+              <label for="message" class="ui label">
                 Message
-              </div>
-              <input type="textarea">
+              </label>
+              <textarea id="message" name="entry.1268440165" class="contactInput"></textarea>
             </div>
-            <button class="ui green button fluid">Send Message</button>
+            <button id="submit" class="disabled ui green button fluid" type="submit">Send Message</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- Footer -->

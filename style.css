@@ -14,6 +14,12 @@ body {
   font-size: 2em;
   padding: 0;
 }
+.computer.only .button, .computer.only .button:hover, .computer.only .button:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: inherit !important;
+}
 .ui.header {
   color: inherit !important;
 }
@@ -46,8 +52,11 @@ body {
 .ui.embed {
   margin: 10px 0;
 }
-.ui.labeled.input {
+.ui.input {
   margin: 1em 0;
+}
+#message {
+  width: 100%;
 }
 #contact {
   margin: 1em 0;
