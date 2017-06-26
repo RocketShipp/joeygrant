@@ -9,7 +9,6 @@ $(document).ready(function(){
   $('#embeds').css('display', 'none');
 
   // AJAX call to Vimeo appends each video
-  var $vidAspect = null;
 
   $.ajax('https://api.vimeo.com/users/user980609/videos', {
     headers: {
@@ -19,9 +18,9 @@ $(document).ready(function(){
     dataType: 'json',
     success: function(resp) {
       resp.data.forEach(function(video){
-        $vidAspect = (video.height / video.width);
+        var $vidAspect = (video.height / video.width);
         if (video.privacy.embed === 'public') {
-          $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?autoplay=0&portrait=0" width="100%" height="${$('#projects').width() * $vidAspect}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
+          $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?autoplay=0&portrait=0" width="100%" height="${$('#projects').width() * $vidAspect}" frameborder="0" data-aspect="${$vidAspect}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
         }
       })
       $('#loader').css('display', 'none');
@@ -31,7 +30,9 @@ $(document).ready(function(){
 
   // Resizes iFrames on device rotation
   $(window).on("orientationchange",function(){
-    $('.myFrame').attr('height', $('#embeds').width() * $vidAspect);
+    $('.myFrame').attr('height', function(){
+      return $('#embeds').width() * $(this).data('aspect');
+    });
   });
 
   // Footer copyright year
