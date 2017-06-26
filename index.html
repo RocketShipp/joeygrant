@@ -79,7 +79,8 @@
     <!-- Contact -->
     <div id="contact" class="ui container fluid">
       <div class="ui grid center container aligned">
-        <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="_self" method="POST">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
+        <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="hidden_iframe" method="POST" onsubmit="submitted=true">
           <div class="column center aligned">
             <p class="ui header huge">
               Contact

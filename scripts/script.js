@@ -52,6 +52,10 @@ $(document).ready(function(){
     }
   })
 
+  $('#submit').on('click', function(){
+    $('#contact div.ui.grid').html(`<div class="center aligned middle aligned column"><p class="ui header massive">Thank you for your interest! I will get back to you at <span class="private">${$('#email').val()}</span> as soon as possible.</p></div>`)
+  })
+
   // Footer copyright year
   var d = new Date();
   var n = d.getFullYear();

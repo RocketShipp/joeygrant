@@ -63,6 +63,9 @@ body {
   padding: 1.5em 0;
   background-color: #303030;
 }
+.private {
+  color: #21BA45;
+}
 #footer {
   color: white;
   text-align: center;
