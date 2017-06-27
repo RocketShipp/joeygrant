@@ -49,16 +49,17 @@ body {
   margin-right: .5em;
 }
 #hero {
-  min-height: 50vh;
+  min-height: 100%;
   background-image: url('img/static.gif');
   background-position: center;
   color: white;
   box-sizing: border-box;
-  padding: .5em;
+  padding: 1.5em 0;
   font-size: 2em;
   text-shadow: .1em .1em .1em black;
 }
 #hero i {
+  margin-top: .5em;
   font-size: 1.5em;
 }
 iframe {
