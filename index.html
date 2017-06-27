@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Grant</title>
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
-    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <meta name="keywords" content="Joseph Grant, RTF, UT Filmmakers, Filmmaker, Austin Texas Film, ATX">
+    <meta name="description" content="This is Joey Grant's radio-television-film portfolio.">
     <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
-    <link href="style.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet" />
 </head>
 <body>
   <!-- Sidebar -->
@@ -20,26 +20,26 @@
     <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="icon linkedin socialMediaButton"></i> LinkedIn</a>
   </div>
   <!-- Pusher -->
-  <div class="pusher">
+  <div id="top" class="pusher">
     <!-- Navigation -->
     <div id="navContainer" class="ui container">
       <div id="navBar" class="ui grid">
           <div class="mobile only	tablet only sixteen wide column">
             <div class="ui menu">
               <h1 class="ui header huge item left">Joseph Grant</h1>
-              <div class="ui header medium item right">
+              <div class="ui header small item right">
                 <i class="icon content"></i>
               </div>
             </div>
           </div>
           <div class="computer only sixteen wide column">
             <div class="ui menu">
-              <h1 class="ui header huge item left">Joseph Grant</h1>
-              <div class="ui header large item right">
-                <a class="ui header large button inverted one wide column" href='https://vimeo.com/user980609' target="_blank"><i class="icon vimeo"></i></a>
-                <a class="ui header large button inverted one wide column" href='https://www.instagram.com/beardwillstay/' target="_blank"><i class="icon instagram"></i></a>
-                <a class="ui header large button inverted one wide column" href='https://twitter.com/ynotserious' target="_blank"><i class="icon twitter"></i></button>
-                <a class="ui header large button inverted one wide column" href='https://www.linkedin.com/in/joseph-grant-b67154bb/' target="_blank"><i class="icon linkedin"></i></a>
+              <h1 class="ui header item left">Joseph Grant</h1>
+              <div class="ui header item right">
+                <a class="ui header large button inverted column" href='https://vimeo.com/user980609' target="_blank" data-content="Vimeo"><i class="icon vimeo"></i></a>
+                <a class="ui header large button inverted column" href='https://www.instagram.com/beardwillstay/' target="_blank" data-content="Instagram"><i class="icon instagram"></i></a>
+                <a class="ui header large button inverted column" href='https://twitter.com/ynotserious' target="_blank" data-content="Twitter"><i class="icon twitter"></i></button>
+                <a class="ui header large button inverted column" href='https://www.linkedin.com/in/joseph-grant-b67154bb/' target="_blank" data-content="LinkedIn"><i class="icon linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -50,16 +50,16 @@
       <div id="hero" class="ui grid equal width center aligned middle aligned">
         <div class="row">
           <div class="column">
-            <i class="icon file text"></i>
-            <h1 class="ui header medium">Writer</h1>
-          </div>
-          <div class="column">
-            <i class="icon record"></i>
-            <h1 class="ui header medium">Operator</h1>
+            <i class="icon film"></i>
+            <p>Editor</p>
           </div>
           <div class="column">
             <i class="icon wizard"></i>
-            <h1 class="ui header medium">Editor</h1>
+            <p>SFX</p>
+          </div>
+          <div class="column">
+            <i class="icon announcement"></i>
+            <p>AD</p>
           </div>
         </div>
       </div>
@@ -69,18 +69,23 @@
       <div class="ui grid middle aligned center aligned">
         <div id="loader" class="row">
           <div class="sixteen wide column">
-            <video id="loader" src="./loader.mp4" width="100%" autoplay>
+            <video id="loader" src="./img/loader.mp4" width="100%" autoplay>
             </video>
           </div>
         </div>
         <div id="embeds" class="row">
         </div>
+        <div id="toTop" class="row">
+          <div class="sixteen wide column">
+            <button class="ui button green fluid"><span class="ui header medium"><i class="icon arrow up"></i></span></button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Contact -->
-    <div id="contact" class="ui container fluid">
+    <div id="contact" class="ui container fluid hidden">
       <div class="ui grid center container aligned">
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if (submitted) {window.location='#'};"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" class="hidden" onload=""></iframe>
         <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="hidden_iframe" method="POST" onsubmit="submitted=true">
           <div class="column center aligned">
             <p class="ui header huge">
@@ -120,7 +125,7 @@
       <div class="ui divider"></div>
       <div class="row">
         <div class="sixteen wide column center aligned">
-          <button onclick="window.location='http://austinshipp.com'" class="footerText ui basic green inverted button">
+          <button onclick="window.open('http://austinshipp.com')" class="footerText ui basic green inverted button">
            Joseph Grant - Developed by RocketShipp
          </button>
         </div>

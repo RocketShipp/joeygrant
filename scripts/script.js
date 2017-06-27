@@ -8,8 +8,19 @@ $(document).ready(function(){
   // Loading Icon settings
   $('#embeds').css('display', 'none');
 
-  // AJAX call to Vimeo appends each video
+  // Popup settings
+  $('.computer.only .ui.menu div a').popup({
+    inline     : false,
+    hoverable  : false,
+    position   : 'left center',
+  });
 
+  // Scroll to Top settings
+  $('#toTop button').click(function(){
+    $(window).scrollTop(0);
+  })
+
+  // AJAX call to Vimeo appends each video
   $.ajax('https://api.vimeo.com/users/user980609/videos', {
     headers: {
       'Authorization': 'basic Y2Y1Y2Y2ZTFiNzlmOTQ3MDM4YzU4YTY4MzBhNjUyZjg3NTY4OTFmODpyRDZJSUxjQkxTRTI1UVo0TnVDRmJyY2xvZmRHM2tWUzRVYmIrY3FwNXAzVGNGOFVtNHpVcElLNXVrMG14a2xBRFRkbWsvMkhjVW9YQksyU0dXTWNORFRYckQ4MVVLMnlnbmxOWC8ySnVvdlRlNk1ySHVuOWowbkR3bmdYME5Iaw=='
@@ -28,18 +39,18 @@ $(document).ready(function(){
     }
   })
 
-  // Responsive textarea height
-  $('#message').css('min-height', $('#subject').height() * 3);
-
-  // Device rotation settings
-  $(window).on("orientationchange",function(){
+  // Screen Resize / Rotate settings
+  $(window).on("resize",function(){
     // Resizes iFrames
     $('.myFrame').attr('height', function(){
       return $('#embeds').width() * $(this).data('aspect');
     });
     // Resizes textarea
-    $('#message').css('min-height', $('#subject').height() * 3);
+    $('#message').css('min-height', $('#name').height() * 3);
   });
+
+  // Responsive form textarea height
+  $('#message').css('min-height', $('#subject').height() * 3);
 
   // Form validator
   $('.contactInput').on('input', function(){
@@ -50,10 +61,6 @@ $(document).ready(function(){
     } else {
       $('#submit').addClass('disabled');
     }
-  })
-
-  $('#submit').on('click', function(){
-    $('#contact div.ui.grid').html(`<div class="center aligned middle aligned column"><p class="ui header massive">Thank you for your interest! I will get back to you at <span class="private">${$('#email').val()}</span> as soon as possible.</p></div>`)
   })
 
   // Footer copyright year

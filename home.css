@@ -3,7 +3,12 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  font-family: sans-serif;
 }
+.hidden {
+  display: none !important;
+}
+
 #loader {
   border: none;
 }
@@ -15,7 +20,7 @@ body {
   padding: 0;
 }
 .header {
-  font-family: 'Architects Daughter', cursive !important;
+  font-family: 'Courier' !important;
   font-weight: bold !important;
   text-shadow: .1em .1em .1em black;
 }
@@ -27,6 +32,7 @@ body {
 }
 .ui.header {
   color: inherit !important;
+  margin: 0;
 }
 .ui.menu {
   background: none;
@@ -48,14 +54,15 @@ body {
   background-position: center;
   color: white;
   box-sizing: border-box;
-  padding: 1em;
-  font-size: 1em;
+  padding: .5em;
+  font-size: 2em;
+  text-shadow: .1em .1em .1em black;
 }
 #hero i {
-  font-size: 4em;
+  font-size: 1.5em;
 }
-.ui.embed {
-  margin: 10px 0;
+iframe {
+  margin: 0;
 }
 .ui.input {
   margin: 1em 0;
@@ -71,6 +78,12 @@ body {
 .private {
   color: #21BA45;
 }
+#embeds {
+  padding-bottom: 0;
+}
+#toTop button {
+  padding: .5em 0;
+}
 #footer {
   font-size: 1em;
   color: white;
@@ -85,4 +98,25 @@ body {
 }
 #footer button {
   box-shadow: none !important;
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #hero {
+    font-size: 5em;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #hero {
+    font-size: 5em;
+  }
+}
+
+/* Large Monitor and Up */
+@media only screen and (min-width: 1200px) {
+  #hero {
+    font-size: 5em;
+  }
 }
