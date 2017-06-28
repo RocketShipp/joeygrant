@@ -56,7 +56,7 @@ body {
 }
 #hero {
   min-height: 100%;
-  background-image: url('img/ColorBars.png');
+  background-image: url('img/colorbars.png');
   background-position: center;
   background-size: contain;
   color: white;
