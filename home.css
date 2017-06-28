@@ -22,7 +22,7 @@ body {
   background-color: rgba(0,0,0,.2) !important;
 }
 .pusher, body.pushable {
-  background: black url('./img/texture.png') !important;
+  background: rgba(0,0,0,.9) url('./img/texture.png') !important;
 }
 #navBar > div {
   font-size: 2em;
