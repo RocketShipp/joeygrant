@@ -56,7 +56,7 @@ body {
 }
 #hero {
   min-height: 100%;
-  background-image: url('img/colorbars.png');
+  background-image: url('./img/colorbars.png');
   background-position: center;
   background-size: contain;
   color: white;
@@ -70,7 +70,7 @@ body {
 }
 iframe {
   margin: 0;
-  background-image: url('img/loader.gif');
+  background-image: url('./img/loader.gif');
   background-position: center;
   background-repeat: no-repeat;
 }
