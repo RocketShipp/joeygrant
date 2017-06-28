@@ -5,9 +5,6 @@ $(document).ready(function(){
   // Sidebar Trigger
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
-  // Loading Icon settings
-  $('#embeds').css('display', 'none');
-
   // Popup settings
   $('.computer.only .ui.menu div a').popup({
     inline     : false,
@@ -34,8 +31,6 @@ $(document).ready(function(){
           $('#embeds').append(`<iframe class="myFrame sixteen wide column" src="https://player.vimeo.com/video/${video.uri.slice(8, 17)}?portrait=0" width="100%" height="${$('#projects').width() * $vidAspect}" frameborder="0" data-aspect="${$vidAspect}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
         }
       })
-      $('#loader').css('display', 'none');
-      $('#embeds').css('display', 'block');
     }
   })
 

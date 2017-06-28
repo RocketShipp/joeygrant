@@ -8,12 +8,21 @@ body {
 .hidden {
   display: none !important;
 }
-
-#loader {
-  border: none;
+.shadowTxt {
+  text-shadow: .1em .1em .03em black;
+}
+.ui.sidebar.menu {
+  background-image: url('./img/colorbars-sidebar.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-y;
+  padding-top: 0 !important;
+}
+.ui.sidebar.menu a, .ui.sidebar.menu h1 {
+  background-color: rgba(0,0,0,.2) !important;
 }
 .pusher, body.pushable {
-  background: black !important;
+  background: black url('./img/texture.png') !important;
 }
 #navBar > div {
   font-size: 2em;
@@ -45,18 +54,15 @@ body {
 .ui.item::before, .ui.item::after {
   display: none;
 }
-.socialMediaButton {
-  margin-right: .5em;
-}
 #hero {
   min-height: 100%;
-  background-image: url('img/static.gif');
+  background-image: url('img/ColorBars.png');
   background-position: center;
+  background-size: contain;
   color: white;
   box-sizing: border-box;
   padding: 1.5em 0;
   font-size: 2em;
-  text-shadow: .1em .1em .1em black;
 }
 #hero i {
   margin-top: .5em;
@@ -64,6 +70,9 @@ body {
 }
 iframe {
   margin: 0;
+  background-image: url('img/loader.gif');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .ui.input {
   margin: 1em 0;
