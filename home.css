@@ -3,7 +3,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Abel', sans-serif !important;
   width: 100% !important;
 }
 .hidden {
@@ -26,7 +26,7 @@ body {
   padding: 0;
 }
 .header {
-  font-family: 'Courier' !important;
+  font-family: 'Fjalla One', sans-serif;
   font-weight: bold !important;
   text-shadow: .1em .1em .1em black;
 }
@@ -61,6 +61,7 @@ body {
   box-sizing: border-box;
   padding: 1.5em 0;
   font-size: 2em;
+  font-weight: bold;
 }
 iframe {
   margin: 0;
