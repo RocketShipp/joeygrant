@@ -6,6 +6,9 @@ body {
   font-family: 'Abel', sans-serif !important;
   width: 100% !important;
 }
+.ui.popup {
+  font-weight: bold !important;
+}
 .hidden {
   display: none !important;
 }
