@@ -17,6 +17,9 @@ $(document).ready(function(){
     $(window).scrollTop(0);
   })
 
+  // Sticky
+  $('.sticky').sticky();
+
   // AJAX call to Vimeo appends each video
   $.ajax('https://api.vimeo.com/users/user980609/videos', {
     headers: {
