@@ -4,6 +4,7 @@ body {
   background-color: black;
   color: white;
   font-family: sans-serif;
+  width: 100% !important;
 }
 .hidden {
   display: none !important;
@@ -13,6 +14,7 @@ body {
 }
 .pusher, body.pushable {
   background: black !important;
+  width: 100% !important;
 }
 #navContainer {
   background-image: url('./img/nav.png');
