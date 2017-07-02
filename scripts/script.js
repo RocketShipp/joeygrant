@@ -13,7 +13,7 @@ $(document).ready(function(){
   });
 
   // Scroll to Top settings
-  $('#toTop button').click(function(){
+  $('#toTop a').click(function(){
     $(window).scrollTop(0);
   })
 
