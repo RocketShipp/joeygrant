@@ -1,0 +1,48 @@
+.content .header {
+  text-shadow: none;
+}
+.ui.card {
+  box-shadow: none;
+  margin: 0 auto;
+  width: 50%;
+}
+p.header.left.floated {
+  margin: 0;
+}
+.extra.content img {
+  width: 100%;
+}
+#profile {
+  color: black;
+}
+#bio {
+  margin: 3em 0 !important;
+  background-color: #303030;
+  padding: 1em;
+}
+#bio p {
+  font-size: 1.3em;
+  line-height: 2em;
+}
+#message {
+  width: 100%;
+}
+.ui.input {
+  margin: 1em 0;
+}
+/* Tablet / iPad Portrait */
+@media only screen and (max-width: 991px) {
+  .ui.card {
+    width: auto;
+  }
+}
+
+/* Computer / Desktop / iPad Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Large Monitor and Up */
+@media only screen and (min-width: 1200px) {
+
+}

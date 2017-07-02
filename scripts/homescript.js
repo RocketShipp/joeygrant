@@ -2,24 +2,6 @@
 
 $(document).ready(function(){
 
-  // Sidebar Trigger
-  $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
-
-  // Popup settings
-  $('.computer.only .ui.menu div a').popup({
-    inline     : false,
-    hoverable  : false,
-    position   : 'left center',
-  });
-
-  // Scroll to Top settings
-  $('#toTop').click(function(){
-    $(window).scrollTop(0);
-  })
-
-  // Sticky
-  $('.sticky').sticky();
-
   // AJAX call to Vimeo appends each video
   $.ajax('https://api.vimeo.com/users/user980609/videos', {
     headers: {
@@ -43,27 +25,6 @@ $(document).ready(function(){
     $('.myFrame').attr('height', function(){
       return $('#embeds').width() * $(this).data('aspect');
     });
-    // Resizes textarea
-    $('#message').css('min-height', $('#name').height() * 3);
   });
-
-  // Responsive form textarea height
-  $('#message').css('min-height', $('#subject').height() * 3);
-
-  // Form validator
-  $('.contactInput').on('input', function(){
-    if ($('#name').val() !== '' && $('#email').val() !== '' && $('#subject').val() !== '' && $('#message').val() !== '') {
-      if ($('#submit').hasClass('disabled')) {
-        $('#submit').removeClass('disabled');
-      }
-    } else {
-      $('#submit').addClass('disabled');
-    }
-  })
-
-  // Footer copyright year
-  var d = new Date();
-  var n = d.getFullYear();
-  $('.footerText').prepend('© ' + n);
-
+  
 });

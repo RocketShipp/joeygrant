@@ -7,15 +7,144 @@
     <meta name="keywords" content="Joseph Grant, RTF, UT Filmmakers, Filmmaker, Austin Texas Film, ATX">
     <meta name="description" content="This is Joey Grant's radio-television-film portfolio.">
     <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
-    <link href="about.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/about.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>YEP</h1>
+  <!-- Sidebar -->
+  <div class="ui sidebar inverted vertical menu shadowTxt">
+    <h1 class="ui header medium item center aligned">Connect</h1>
+    <a href="https://vimeo.com/user980609" target="_blank" class="item"><i class="icon vimeo sqaure socialMediaButton"></i>Vimeo</a>
+    <a href="https://www.instagram.com/beardwillstay/" target="_blank" class="item"><i class="icon instagram socialMediaButton"></i> Instagram</a>
+    <a href="https://twitter.com/ynotserious" target="_blank" class="item"><i class="icon twitter socialMediaButton"></i>Twitter</a>
+    <a href="https://www.linkedin.com/in/joseph-grant-b67154bb/" target="_blank" class="item"><i class="icon linkedin socialMediaButton"></i>LinkedIn</a>
+    <a class="item" href='http://www.imdb.com/name/nm8948246/' target="_blank"><i class="icon ticket socialMediaButton"></i>IMDb</a>
+  </div>
+  <!-- Pusher -->
+  <div id="top" class="pusher">
+    <!-- Navigation -->
+    <div id="navContainer" class="ui container fluid">
+      <div id="navBar" class="ui grid">
+          <div class="mobile only	tablet only sixteen wide column">
+            <div class="ui menu">
+              <h1 class="ui header large item left">EDITOR &middot; SFX &middot; AD</h1>
+              <div class="ui header small item right">
+                <i class="icon content"></i>
+              </div>
+            </div>
+          </div>
+          <div class="computer only sixteen wide column">
+            <div class="ui container menu">
+              <h1 class="ui header item left">EDITOR &middot; SFX &middot; AD</h1>
+              <div class="ui header item right">
+                <a class="ui header large button inverted column" href='https://vimeo.com/user980609' target="_blank" data-content="Vimeo"><i class="icon vimeo shadowTxt"></i></a>
+                <a class="ui header large button inverted column" href='https://www.instagram.com/beardwillstay/' target="_blank" data-content="Instagram"><i class="icon instagram shadowTxt"></i></a>
+                <a class="ui header large button inverted column" href='https://twitter.com/ynotserious' target="_blank" data-content="Twitter"><i class="icon twitter shadowTxt"></i></button>
+                <a class="ui header large button inverted column" href='https://www.linkedin.com/in/joseph-grant-b67154bb/' target="_blank" data-content="LinkedIn"><i class="icon linkedin shadowTxt"></i></a>
+                <a class="ui header large button inverted column" href='http://www.imdb.com/name/nm8948246/' target="_blank" data-content="IMDb"><i class="icon ticket shadowTxt"></i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Profile -->
+    <div id="profile" class="ui container">
+      <div class="ui grid">
+        <div class="row">
+          <div class="column">
+            <div class="ui card">
+              <div class="content">
+                <p class="header left floated">
+                  Joseph Grant
+                </p>
+                <p class="right floated meta">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i> Bachelors in RTF
+                </p>
+              </div>
+              <div class="ui image">
+                <img src="https://scontent-dft4-2.cdninstagram.com/t51.2885-15/e35/14704991_1718475315137773_3013933642872258560_n.jpg">
+              </div>
+              <div class="extra content">
+                <img src="./img/avid.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bio -->
+    <div id="bio" class="ui container fluid">
+      <div class="ui container grid equal width middle aligned">
+        <div class="column">
+          <p>
+            "I am a storyteller first and foremost whether that I be in an edit bay or on set. Windows moviemaker was my first battlegrounds but it wasn’t cutting it. I have used a variety of software since then including Avid, FCP, and Adobe Premiere. I am a certified Avid User and recently graduated from The University of Texas at Austin with a Bachelor’s in Radio-TV-Film.
+          </p>
+          <p>
+            I was raised in Austin, Texas and helped out on quite a few short films over the course of my time here. At UT I discovered my love for post-production as well as Assistant Direction. I am always looking for new projects to jump aboard on so feel free to contact me.
+          </p>
+          <p>
+            -Joe"
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact" class="ui container">
+      <div class="ui grid center aligned">
+        <iframe name="hidden_iframe" id="hidden_iframe" class="hidden" onload=""></iframe>
+        <form class="row" action="https://docs.google.com/forms/d/e/1FAIpQLSeeeSqqdaVF7pxAKR8q1gCv0OC8wfvL3BjpJ8ZJycgTveN61w/formResponse" target="hidden_iframe" method="POST" onsubmit="submitted=true">
+          <div class="column center aligned">
+            <p class="ui header huge">
+              Contact Joe
+            </p>
+            <div class="ui labeled fluid input">
+              <label for="name" class="ui label">
+                Name
+              </label>
+              <input type="text" id="name" name="entry.661391189" class="contactInput">
+            </div>
+            <div class="ui labeled fluid input">
+              <label for="email" class="ui label">
+                Email
+              </label>
+              <input type="email" id="email" name="entry.1021572072" class="contactInput">
+            </div>
+            <div class="ui labeled fluid input">
+              <label for="subject" class="ui label">
+                Subject
+              </label>
+              <input type="text" id="subject" name="entry.598981944" class="contactInput">
+            </div>
+            <div class="ui labeled fluid input">
+              <label for="message" class="ui label">
+                Message
+              </label>
+              <textarea id="message" name="entry.1268440165" class="contactInput"></textarea>
+            </div>
+            <button id="submit" class="disabled ui green button fluid" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer" class="ui container fluid">
+      <div class="ui divider"></div>
+      <div class="row">
+        <div class="sixteen wide column center aligned">
+          <button onclick="window.open('http://austinshipp.com')" class="footerText ui basic green inverted button">
+           Joseph Grant - Developed by RocketShipp
+         </button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/mainscript.js"></script>
+  <script src="./scripts/aboutscript.js"></script>
 </body>
 </html>
