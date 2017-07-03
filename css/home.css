@@ -1,6 +1,6 @@
 #hero {
   min-height: 100%;
-  background-image: url('../img/hero.png');
+  background-image: url('../img/hero.jpg');
   background-position: center;
   background-repeat: repeat-y;
   background-size: 100% auto;
@@ -14,6 +14,7 @@ iframe {
   margin: 0;
   background-image: url('../img/loader.gif');
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 #embeds {

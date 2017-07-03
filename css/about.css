@@ -28,7 +28,7 @@ p.header.left.floated {
   width: 100%;
 }
 #contact i {
-  margin: 1em 0;
+  margin: .5em 0 0 0;
   color: green;
   font-size: 5em;
 }
