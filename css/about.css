@@ -27,6 +27,11 @@ p.header.left.floated {
 #message {
   width: 100%;
 }
+#contact i {
+  margin: 1em 0;
+  color: green;
+  font-size: 5em;
+}
 .ui.input {
   margin: 1em 0;
 }

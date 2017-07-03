@@ -22,4 +22,6 @@ $(document).ready(function(){
     }
   })
 
+  $('#hidden_iframe').attr('onload', `$('#contact div').html('<i class="icon check circle outline"></i>')`)
+
 });
