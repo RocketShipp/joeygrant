@@ -22,6 +22,7 @@ $(document).ready(function(){
     }
   })
 
+  // Hidden iFrame onload function
   $('#hidden_iframe').attr('onload', `$('#contact div').html('<i class="icon check circle outline"></i>')`)
-
+  
 });

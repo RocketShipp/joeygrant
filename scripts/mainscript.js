@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   // Scroll to Top settings
   $('#toTop').click(function(){
-    $(window).scrollTop(0);
+    $(window, 'body').scrollTop(0);
   })
 
   // Footer copyright year
