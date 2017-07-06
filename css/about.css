@@ -6,9 +6,10 @@
   margin: 0 auto;
   width: 50%;
 }
-.ui.card p {
+.header {
   font-family: 'Fjalla One', sans-serif !important;
   font-weight: bold !important;
+  text-shadow: .1em .1em .1em black;
 }
 p.header.left.floated {
   margin: 0;
@@ -25,7 +26,7 @@ p.header.left.floated {
   padding: 1em;
 }
 #bio p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 2em;
 }
 #message {
@@ -39,10 +40,15 @@ p.header.left.floated {
 .ui.input {
   margin: 1em 0;
 }
+textarea {
+  border-top-right-radius: 0.285714rem;
+  border-bottom-right-radius: 0.285714rem;
+}
 /* Tablet / iPad Portrait */
 @media only screen and (max-width: 991px) {
-  .ui.card {
-    width: auto;
+  #bio p {
+    font-size: 1.3em;
+    line-height: 2em;
   }
 }
 
