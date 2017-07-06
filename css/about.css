@@ -6,6 +6,10 @@
   margin: 0 auto;
   width: 50%;
 }
+.ui.card p {
+  font-family: 'Fjalla One', sans-serif !important;
+  font-weight: bold !important;
+}
 p.header.left.floated {
   margin: 0;
 }
