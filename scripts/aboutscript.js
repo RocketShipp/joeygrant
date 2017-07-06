@@ -2,10 +2,16 @@
 
 $(document).ready(function(){
 
-  // Screen Resize / Rotate settings
+  // Screen Resize
   $(window).on("resize",function(){
     // Resizes textarea
     $('#message').css('min-height', $('#name').height() * 3);
+    // Resizes image
+    if ($(window).width() >= $(window).height()) {
+      $('.ui.card').css('width', '50%');
+    } else {
+      $('.ui.card').css('width', 'auto');      
+    }
   });
 
   // Responsive form textarea height
@@ -24,5 +30,5 @@ $(document).ready(function(){
 
   // Hidden iFrame onload function
   $('#hidden_iframe').attr('onload', `$('#contact div').html('<i class="icon check circle outline"></i>')`)
-  
+
 });
