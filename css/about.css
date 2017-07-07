@@ -4,7 +4,7 @@
 .ui.card {
   box-shadow: none;
   margin: 0 auto;
-  width: 50%;
+  width: auto;
 }
 .header {
   font-family: 'Fjalla One', sans-serif !important;
@@ -26,7 +26,7 @@ p.header.left.floated {
   padding: 1em;
 }
 #bio p {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 2em;
 }
 #message {
@@ -47,17 +47,21 @@ textarea {
 /* Tablet / iPad Portrait */
 @media only screen and (max-width: 991px) {
   #bio p {
-    font-size: 1.3em;
-    line-height: 2em;
+    font-size: 1.5em;
+    line-height: 1.8em;
   }
 }
 
 /* Computer / Desktop / iPad Landscape */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+  .ui.card {
+    width: 50%;
+  }
 }
 
 /* Large Monitor and Up */
 @media only screen and (min-width: 1200px) {
-
+  .ui.card {
+    width: 50%;
+  }
 }
