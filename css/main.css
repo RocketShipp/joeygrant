@@ -4,6 +4,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Abel', sans-serif !important;
+  font-size: 1em;
 }
 .ui.popup {
   font-weight: bold !important;

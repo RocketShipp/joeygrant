@@ -2,6 +2,11 @@
 
 $(document).ready(function(){
 
+  // Framekiller
+  if (top.location!= self.location) {
+   top.location = self.location.href;
+  }
+
   // Sidebar Trigger
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
