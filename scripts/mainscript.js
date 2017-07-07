@@ -3,10 +3,10 @@
 $(document).ready(function(){
 
   // Framekiller
-  if (top.location!= self.location) {
-   top.location = self.location.href;
+  if (window.location !== window.top.location) {
+    window.top.location = window.location;
   }
-
+  
   // Sidebar Trigger
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
