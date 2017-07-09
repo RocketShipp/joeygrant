@@ -2,22 +2,6 @@
 
 $(document).ready(function(){
 
-  // Frame setter
-  var framesetter = function(){
-    if ((top.window.outerHeight != self.window.outerHeight)
-    || top.window.outerWidth != self.window.outerWidth) {
-      top.window.outerHeight = self.window.outerHeight;
-      top.window.outerWidth = self.window.outerWidth;
-    }
-  }
-
-  framesetter();
-
-  // Screen Resize
-  $(window).on("resize",function(){
-    framesetter();
-  });
-
   // Sidebar Trigger
   $('.ui.sidebar').sidebar('attach events', '.icon.content', 'show');
 
