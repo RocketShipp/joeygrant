@@ -32,6 +32,9 @@ p.header.left.floated {
 #message {
   width: 100%;
 }
+#contact {
+  margin-bottom: 3rem;
+}
 #contact i.check {
   margin: .5em 0 0 0;
   color: green;
