@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   // AJAX call to Vimeo appends each video
-  $.ajax('https://api.vimeo.com/users/user980609/videos', {
+  $.ajax('https://api.vimeo.com/me/albums/4683040/videos?sort=manual', {
     headers: {
       'Authorization': 'basic Y2Y1Y2Y2ZTFiNzlmOTQ3MDM4YzU4YTY4MzBhNjUyZjg3NTY4OTFmODpyRDZJSUxjQkxTRTI1UVo0TnVDRmJyY2xvZmRHM2tWUzRVYmIrY3FwNXAzVGNGOFVtNHpVcElLNXVrMG14a2xBRFRkbWsvMkhjVW9YQksyU0dXTWNORFRYckQ4MVVLMnlnbmxOWC8ySnVvdlRlNk1ySHVuOWowbkR3bmdYME5Iaw=='
     },
@@ -26,5 +26,5 @@ $(document).ready(function(){
       return $('#embeds').width() * $(this).data('aspect');
     });
   });
-  
+
 });

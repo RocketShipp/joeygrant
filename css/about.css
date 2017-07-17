@@ -32,10 +32,13 @@ p.header.left.floated {
 #message {
   width: 100%;
 }
-#contact i {
+#contact i.check {
   margin: .5em 0 0 0;
   color: green;
   font-size: 5em;
+}
+#contact p.header {
+  font-size: 3.5rem !important;
 }
 .ui.input {
   margin: 1em 0;
